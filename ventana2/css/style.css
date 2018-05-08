@@ -12,6 +12,11 @@
 }
 
 @font-face {
+    font-family:"futura";
+    src:url(font/Futura.ttf) format("opentype");
+}
+
+@font-face {
     font-family:'Bigjoe';
     src:url(font/BIGJOHN.otf) format("opentype");
 }
@@ -66,12 +71,15 @@
 	a
 	{
 		text-decoration: none;
-		color: #80BA8E;
+		color: #6EE2FF;
 	}
 	
 	a:hover
 	{
-		text-decoration: underline;
+		text-decoration: none;
+		color:#FFD83E;
+		animation: shakemenu 1.5s ease 0s normal;
+		
 	}
 
 	sub
@@ -100,11 +108,19 @@
 	{
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
+		font-family:futura;
+
 		
 	}
 	
 		blockquote h1{
 			color:#fff;
+			font-size: 30px;
+			margin-bottom: 2%;
+		}
+		
+		blockquote p{
+			font-size: 20px;
 		}
 	p, ul, ol, dl, table
 	{
@@ -183,7 +199,7 @@
 	position:absolute;
 	top:40%;
 	left:25%;
-	font-size: 40px;
+	font-size: 20px;
 	}
 
 		.image
@@ -879,6 +895,7 @@
 			text-align:center;
 			position:fixed;
 			z-index:2;
+		animation: shakemenu 1.5s ease 0s normal;
 
 		}
 		
@@ -985,6 +1002,7 @@
 		color: black;
 		    margin: 0 0 0 0;
 			background: #6EE2FF;
+			font-family: futura;
 	}
 	
 	#footer header .byline2
@@ -1093,6 +1111,8 @@ margin:auto;
 			border-top: 1px solid;
 			border-bottom: 1px solid;
 			background: #FC7647;
+			width: 80%;
+            margin-left: 10%;
 		}
 
 		#tweet blockquote
@@ -1104,3 +1124,31 @@ margin:auto;
 			background: #FC7647;
 			color: #fff;
 		}	
+		
+		
+		/*Animaciones*/
+		
+		/*check menu */
+		@keyframes shakemenu{
+		0% {
+			transform: translateY(0px);
+		}
+		40% {
+			transform: translateY(-20px);
+		}
+		50% {
+			transform: translateY(0px);
+		}
+		60% {
+			transform: translateY(-10px);
+		}
+		100% {
+			transform: translateY(0px);
+		}
+		
+		}
+		
+		
+		
+		
+		

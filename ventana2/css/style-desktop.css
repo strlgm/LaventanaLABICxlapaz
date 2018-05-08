@@ -52,7 +52,7 @@
 
 	#main
 	{
-		padding: 6em 0em;
+		padding: em 0em;
 	}
 	
 	.homepage #content header h2
@@ -111,5 +111,5 @@
 		margin: 0;
 		padding: 1em 4em;
 		line-height: 1.5em;
-		font-size: 30px;
+		
 	}	
